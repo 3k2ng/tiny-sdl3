@@ -43,6 +43,7 @@ CMakeUserPresets.json
 *.swp
 *.swo
 *~
+.zed/
 
 .DS_Store
 .AppleDouble
@@ -58,3 +59,5 @@ CMakeUserPresets.json
 
 Thumbs.db
 desktop.ini
+
+imgui.ini
