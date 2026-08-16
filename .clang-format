@@ -1,1 +1,35 @@
+Language: Cpp
 BasedOnStyle: Google
+Standard: c++17
+
+ColumnLimit: 120
+
+BreakBeforeBraces: Attach
+
+AlignAfterOpenBracket: BlockIndent
+BinPackArguments: false
+BinPackParameters: false
+
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignConsecutiveBitFields: None
+AlignConsecutiveMacros: None
+
+AlignTrailingComments: false
+
+AlignOperands: DontAlign
+
+IndentWidth: 2
+ContinuationIndentWidth: 2
+AccessModifierOffset: -2
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+SortIncludes: true
+IncludeBlocks: Preserve
+
+DerivePointerAlignment: false
