@@ -53,6 +53,16 @@ else()
   target_compile_options(TinyGame PRIVATE -Wall -Wextra -Wno-unused-parameter)
 endif()
 
+add_custom_target(
+  sync_assets
+  ALL
+  COMMAND
+    ${CMAKE_COMMAND} -E copy_directory_if_different ${CMAKE_CURRENT_SOURCE_DIR}/textures
+    $<TARGET_FILE_DIR:TinyGame>/textures
+  VERBATIM
+)
+add_dependencies(TinyGame sync_assets)
+
 if(WIN32)
   add_custom_command(
     TARGET TinyGame
