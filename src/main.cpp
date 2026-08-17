@@ -88,7 +88,7 @@ inline bool key_pressed(const Input& input, SDL_Scancode scancode) {
     return false;
   }
 
-  SDL_srand(0);
+  SDL_srand(42);
 
   // init
   char madoka_path[1024];
